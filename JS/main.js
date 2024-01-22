@@ -121,7 +121,7 @@ function tinhThue() {
     "<br>Thuế phải trả: " + thue.toFixed(2) + " triệu đồng";
 }
 
-//Bài tập 3
+//Bài tập 4
 function hienThiNhapKetNoi() {
   let loaiKhachHang = document.getElementById("loaiKhachHang").value;
   let inputSoKetNoi = document.getElementById("soKetNoi");
