@@ -12,9 +12,9 @@
 
 <body>
     <div class="container">
+        <!-- Bài Tập 1 -->
         <h1>Thông tin thi tuyển</h1>
         <form id="tuyenSinhForm">
-
             <label for="">Điểm chuẩn của hội đồng:</label>
             <input type="number" id="diemChuan" max="30" required><br>
 
@@ -45,8 +45,59 @@
 
             <button type="button" onclick="kiemTraDiem()">Kiểm tra kết quả</button>
         </form>
-
         <div id="ketQua"></div>
+
+        <!-- Bài Tập 2 -->
+        <h2>Nhập thông tin tiêu thụ điện</h2>
+        <form id="tinhTienDienForm">
+            <label for="">Tên khách hàng:</label>
+            <input type="text" id="ten" required><br>
+    
+            <label for="">Số Kw tiêu thụ:</label>
+            <input type="number" id="soKw" required><br>
+    
+            <button type="button" onclick="tinhTienDien()">Tính Tiền</button>
+        </form>
+        <div id="ketQua2"></div>
+
+        <!-- Bài tập 3 -->
+        <h2>Nhập thông tin cá nhân</h2>
+        <form id="tinhThueForm">
+            <label for="">Họ và Tên:</label>
+            <input type="text" id="hoTen" required><br>
+    
+            <label for="">Tổng thu nhập năm (triệu):</label>
+            <input type="number" id="tongThuNhap" required><br>
+    
+            <label for="">Số người phụ thuộc:</label>
+            <input type="number" id="soNguoiPhuThuoc" required><br>
+    
+            <button type="button" onclick="tinhThue()">Tính Thuế</button>
+        </form>
+        <div id="ketQua3"></div>
+
+        <!-- Bài tập 4 -->
+        <h2>Nhập thông tin hóa đơn cáp</h2>
+    <form id="tinhTienCapForm">
+        <label for="">Mã khách hàng:</label>
+        <input type="text" id="maKhachHang" required><br>
+
+        <label for="">Loại khách hàng:</label>
+        <select id="loaiKhachHang" onchange="hienThiNhapKetNoi()">
+            <option value="doanhNghiep">Doanh Nghiệp</option>
+            <option value="nhaDan">Nhà Dân</option>
+        </select><br>
+
+        <label for="">Số kết nối:</label>
+        <input type="number" id="soKetNoi" required><br>
+
+        <label for="">Số kênh cao cấp:</label>
+        <input type="number" id="soKenhCaoCap" required><br>
+
+        <button type="button" onclick="tinhTienCap()">Tính Hóa Đơn</button>
+    </form>
+
+    <div id="ketQua4"></div>
     </div>
 
 
